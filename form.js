@@ -15,14 +15,21 @@
 		var name = document.getElementById("name").value;
 		var number = document.getElementById("number").value;
 		var password = document.getElementById("password").value;
-		alert("find");
 		var info = JSON.parse(this.responseText);
 		if (info.hasOwnProperty(number) && info[number]["password"] == password) {
-			document.cookie = "number=" + number;
-			window.location.replace("/dianay/dubhacks/index.html");
+			document.cookie = number;
+		} else {
+			writeJSON(name, number, password);
 		}
+		window.location.replace("/dianay/dubhacks/index.html");
+	}
 
-		//writex(name, number, password);
+	function writeJSON(getName, getNumber, getPassword) {
+		var php = new XMLHttpRequest();
+		var param = "name=" + encodeURIComponent(getName) + "&number=" +
+			encodeURIComponent(getNumber) + "&password=" + encodeURIComponent(getPassword);
+		php.open("GET", "http://students.washington.edu/dianay/dubhacks/write.php");
+		php.send(param);
 	}
 })();
 
