@@ -3,8 +3,37 @@
 <html>
 
 	<head>
+		<title>OneBlock Way</title>
+		<!--<link rel="stylesheet" type="text/css" href="index.css">-->
+		<link rel="stylesheet" type="text/css" href="css/style5.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
 	</head>
+	
 	<body>
+		<h1>OneBlock Away</h1>
+		<select id="cd-dropdown" class="cd-select">
+			<option value="-1" selected>Choose An Activity</option>
+		    <option value="1" class="icon-monkey">Studying</option>
+		    <option value="2" class="icon-bear">Chilling</option>
+		    <option value="3" class="icon-squirrel">Walking</option>
+		    <option value="4" class="icon-elephant">Getting Food</option>
+		</select> 
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+		<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown( {
+					gutter : 5,
+					stack : false,
+					slidingIn : 100
+				} );
+
+			});
+		</script>
 	</body>
 
 </html>
