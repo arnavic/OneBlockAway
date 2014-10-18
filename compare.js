@@ -33,7 +33,20 @@
 					&& info.friendsList[i].times.hours.hour == info.number.times.hours.hour
 					&& info.friendsList[i].times.mins.min == info.number.times.mins.min
 					&& (distance["rows"]["elements"]["distance"]["value"] < 700) {
-					// send text
+					// Twilio Credentials 
+					var accountSid = 'AC4be592d8439b1dca7ecd1d5596764f48'; 
+					var authToken = '7ce2bd7bea065176fd6595f026b5a27d'; 
+					 
+					//require the Twilio module and create a REST client 
+					var client = require('twilio')(accountSid, authToken); 
+					 
+					client.messages.create({ 
+						to: "+14259852764", 
+						from: "+12532206079", 
+						body: "Hello! " + info.friendsList[i].name + " is doing the same thing you are right now! Text them at " + info.friendsList[i] + "!",   
+					}, function(err, message) { 
+						console.log(message.sid); 
+					});
 				}
 			}
 		}
