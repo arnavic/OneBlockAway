@@ -1,0 +1,26 @@
+{
+	"1234567890": {
+		"name": "Bob",
+		"password": "bobbobbob",
+		"friends": {
+			"0987654321": "Tom",
+			"5432167890": "Jerry"
+		}
+	},
+
+	"0987654321": {
+		"name": "Tom",
+		"password": "tomtomtom",
+		"friends": {
+			"1234567890": "Bob"
+		}
+	},
+
+	"5432167890": {
+		"name": "Jerry",
+		"password": "jerryjerry",
+		"friends": {
+			"1234567890": "Bob"
+		}
+	}
+}
