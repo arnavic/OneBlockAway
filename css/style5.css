@@ -7,8 +7,14 @@ body {
 }
 
 h1 {
-	text-align: center;
+	text-align: left;
 	background-color: #AA4A39; 
+	font-family: sans-serif;
+	height: 100px;
+	padding-top: 30px;
+	padding-left: 40px;
+	margin-bottom: 50px;
+	color: #7B8C92;
 }
 
 .cd-dropdown ul {
@@ -29,7 +35,7 @@ h1 {
 }
 
 .cd-active.cd-dropdown > span {
-	color: #c29ad2;
+	color: #AA4A39;
 }
 
 .cd-active.cd-dropdown ul li {
@@ -45,6 +51,6 @@ h1 {
 }
 
 .cd-active.cd-dropdown ul li span:hover {
-	background: #c29ad2;
+	background: #AA4A39;
 	color: #fff;
 }
