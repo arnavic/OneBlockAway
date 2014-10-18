@@ -1,0 +1,46 @@
+body {
+	background-color:  #26596A;
+	margin: 0px;
+}
+
+h1 {
+	text-align: left;
+	background-color: #AA4A39; 
+	font-family: sans-serif;
+	height: 70px;
+	padding-top: 30px;
+	padding-left: 40px;
+	margin-bottom: 50px;
+	color: #7B8C92;
+	margin-top: 0px;
+	font-size: 30px;
+}
+#entranceform > div {
+	height: 60px;
+	width: 300px;
+	margin: auto;
+	margin-bottom: 15px;
+
+}
+
+#entranceform input {
+	font-family: sans-serif;
+	width: 95%;
+	height: 95%;
+	transition: all .1s;	
+}
+
+#entranceform input:focus {
+/*	border: 5px solid #AA4A39; */
+	outline: none;
+	text-shadow: none;
+	text-transform: none;
+	background-color: #AA4A39;
+	color: white;
+	border: none;
+}
+
+#entranceform button {
+	width: 96.5%;
+	height: 95%;
+}
